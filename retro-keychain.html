@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Retro KeyChain App</title>
+        <style>
+        #keyboard-bg {
+            background-color: #4F4F4F;
+            border: 2px solid #949494;
+            border-radius: 10px;
+            height: 500px;
+            margin: 0 auto;
+            position: relative;
+            width: 500px;
+
+        }
+        #soundButton1 {
+            background-color: #008FFF;
+            border: 2px solid #60B9FF;
+            border-radius: 10px;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+
+        }
+
+        #soundButton2 {
+            background-color: #9E00FF;
+            border: 2px solid #C972FE;
+            border-radius: 10px;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 30px;
+            left: 185px;
+
+        }
+        #soundButton3 {
+            background-color: #27FF00;
+            border: 2px solid #76FF5D;
+            border-radius: 10px;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 30px;
+            left: 340px;
+        }
+        #soundButton4 {
+            background-color: #FF0000;
+            border: 2px solid #FF6868;
+            border-radius: 10px;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 185px;
+            left: 30px;
+        }
+        #soundButton5 {
+            background-color: #FF007C;
+            border: 2px solid #FF6EB4;
+            border-radius: 10px;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 185px;
+            left: 185px;
+           
+        }
+        #soundButton6 {
+            background-color: #2E00FF;
+            border: 2px solid #856AFF;
+            border-radius: 10px;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 185px;
+            left: 340px;
+        }
+        #soundButton7 {
+            background-color: #FFFB00;
+            border: 2px solid #FFFD70;
+            border-radius: 10px;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 340px;
+            left: 30px;
+            
+        }
+        #soundButton8 {
+            background-color: #FF7400;
+            border: 2px solid #FFB77B;
+            border-radius: 10px;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 340px;
+            left: 185px;
+        }
+        #soundButton9 {
+            background-color: #D3D3D3;
+            border: 2px solid #EAEAEA;
+            border-radius: 10px;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 340px;
+            left: 340px;
+        }
+        
+        
+        </style>
+    </head>
+    <body>
+
+        <div id="keyboard-bg">
+            <!--The button and audio file-->
+            <div id="soundButton1">
+            <audio id="soundEffectOne" src="./wastedSoundEffect.m4a"></audio>
+            </div>
+            <!------------------------------------->
+            <div id="soundButton2">
+            <audio id="soundEffectTwo" src="./botNoise1.m4a"></audio>
+            </div>
+
+            <div id="soundButton3">
+            <audio id="soundEffectThree" src="./mgsAlert.m4a"></audio>
+            </div>
+
+            <div id="soundButton4">
+            <audio id="soundEffectFour" src="rubberDucky.m4a"></audio>
+            </div>
+
+            <div id="soundButton5">
+            <audio id="soundEffectFive" src="sadMusic.m4a"></audio>
+            </div>
+
+            <div id="soundButton6">
+            <audio id="soundEffectSix" src="sega.m4a"></audio>
+            </div>
+
+            <div id="soundButton7">
+            <audio id="soundEffectSeven" src="ps4Trophy.m4a"></audio>
+            </div>
+
+            <div id="soundButton8">
+            <audio id="soundEffectEight" src="lightSaber.m4a"></audio>
+            </div>
+
+            <div id="soundButton9">
+                <audio id="soundEffectNine" src="dbzTeleport.m4a"></audio>
+            </div>
+
+        </div>
+
+
+
+
+
+        <script>
+        //Global Variables 
+        var button1 = document.getElementById("soundButton1");
+        var button2 = document.getElementById("soundButton2");
+        var button3 = document.getElementById("soundButton3");
+        var button4 = document.getElementById("soundButton4");
+        var button5 = document.getElementById("soundButton5");
+        var button6 = document.getElementById("soundButton6");
+        var button7 = document.getElementById("soundButton7");
+        var button8 = document.getElementById("soundButton8");
+        var button9 = document.getElementById("soundButton9");
+        //sound effect varibales below
+        var soundEffectOne = document.getElementById("soundEffectOne");
+        var soundEffectTwo = document.getElementById("soundEffectTwo");
+        var soundEffectThree = document.getElementById("soundEffectThree");
+        var soundEffectFour = document.getElementById("soundEffectFour");
+        var soundEffectFive = document.getElementById("soundEffectFive");
+        var soundEffectSix= document.getElementById("soundEffectSix");
+        var soundEffectSeven = document.getElementById("soundEffectSeven");
+        var soundEffectEight = document.getElementById("soundEffectEight");
+        var soundEffectNine = document.getElementById("soundEffectNine");
+   
+
+      
+        button1.addEventListener('click', function () {
+            console.log("Button 1");
+            if(true ) {
+                soundEffectOne.play();
+            }
+        });
+
+        button2.addEventListener('click', function () {
+            console.log("Button 2");
+            if(true) {
+                soundEffectTwo.play();
+            }     
+        });
+
+        button3.addEventListener('click', function () {
+            console.log("Button 3");
+            if(true) {
+                soundEffectThree.play();
+            }     
+        });
+
+        button4.addEventListener('click', function () {
+            console.log("Button 4");
+            if(true) {
+                soundEffectFour.play();
+            }     
+        });
+
+        button5.addEventListener('click', function () {
+            console.log("Button 5");
+            if(true) {
+                soundEffectFive.play();
+            }     
+        });
+
+        button6.addEventListener('click', function () {
+            console.log("Button 6");
+            if(true) {
+                soundEffectSix.play();
+            }     
+        });
+
+        button7.addEventListener('click', function () {
+            console.log("Button 7");
+            if(true) {
+                soundEffectSeven.play();
+            }     
+        });
+
+        button8.addEventListener('click', function () {
+            console.log("Button 8");
+            if(true) {
+                soundEffectEight.play();
+            }     
+        });
+
+        button9.addEventListener('click', function () {
+            console.log("Button 9");
+            if(true) {
+                soundEffectNine.play();
+            }     
+        });
+
+       
+       
+       
+
+       
+       
+        </script>
+    </body>
+    
+    
+    
+</html>
